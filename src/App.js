@@ -1,9 +1,9 @@
 import "./App.css";
-import Form from "./components/Form";
+import Profile from "./pages/Profile/Create";
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Profile />
     </div>
   );
 }

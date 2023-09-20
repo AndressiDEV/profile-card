@@ -16,7 +16,7 @@ function OutlinedInput({props}) {
     setFocus(false);
   };
   return (
-    <div className={styles.textFieldGroup}>
+    <div className={clsx(styles.textFieldGroup, props.className) }>
       <div
         className={styles.textFieldControl}
         onFocus={focused ? null : handleFocusInput}

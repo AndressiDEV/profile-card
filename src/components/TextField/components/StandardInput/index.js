@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import clsx from 'clsx';
-import styles from './StandardInput.module.scss';
-function StandardInput({props}) {
-    const {label, focused, value, inputProps} = props;
+import { useState } from "react";
+import clsx from "clsx";
+import styles from "./StandardInput.module.scss";
+function StandardInput({ props }) {
+  const { label, focused, value, inputProps } = props;
   const [focus, setFocus] = useState(focused);
   const [filled, setFilled] = useState(focused);
   const handleFocusInput = () => {
@@ -11,12 +11,12 @@ function StandardInput({props}) {
   };
   const handleBlurInput = () => {
     if (value.length === 0) {
-        setFilled(false);
+      setFilled(false);
     }
     setFocus(false);
   };
   return (
-    <div className={styles.textFieldGroup}>
+    <div className={clsx(styles.textFieldGroup, props.className)}>
       <div
         className={styles.textFieldControl}
         onFocus={focused ? null : handleFocusInput}
@@ -38,7 +38,12 @@ function StandardInput({props}) {
             { [styles.filled]: filled }
           )}
         >
-          <input value={value} text="input" onChange={props.onChange} maxLength={inputProps ?inputProps.maxLength : 12} />
+          <input
+            value={value}
+            text="input"
+            onChange={props.onChange}
+            maxLength={inputProps ? inputProps.maxLength : 12}
+          />
         </div>
       </div>
     </div>
