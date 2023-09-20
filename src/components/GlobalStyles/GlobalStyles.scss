@@ -1,0 +1,59 @@
+@import 'normalize.css';  //reset css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+html {
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    font-size: 18px;
+}
+.marginTop-8{
+    margin-top: 8px !important;
+}
+.marginBott-8{
+    margin-bottom: 8px !important;
+}
+.marginLeft-8{
+    margin-left: 8px !important;
+}
+.marginRight-8{
+    margin-right: 8px !important;
+}
+.marginTop-16{
+    margin-top: 16px !important;
+}
+.marginBott-16{
+    margin-bottom: 16px !important;
+}
+.marginLeft-16{
+    margin-left: 16px !important;
+}
+.marginRight-16{
+    margin-right: 16px !important;
+}
+.marginTop-24{
+    margin-top: 24px !important;
+}
+.marginBott-24{
+    margin-bottom: 24px !important;
+}
+.marginLeft-24{
+    margin-left: 24px !important;
+}
+.marginRight-24{
+    margin-right: 24px !important;
+}
+.visibleHidden {
+    visibility: hidden;
+}
+.visibleTrue {
+    visibility: visible;
+}
+.pointerEvent-None {
+    pointer-events: none;
+}
+.display-None{
+    display: none;
+}
